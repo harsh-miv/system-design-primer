@@ -840,6 +840,9 @@ The master serves reads and writes, replicating writes to one or more slaves, wh
 
 * Additional logic is needed to promote a slave to a master.
 * See [Disadvantage(s): replication](#disadvantages-replication) for points related to **both** master-slave and master-master.
+* Downtime and possibly loss of data when a master fails
+  All writes also have to be made to the master in a master-slave design
+  Each additional slave add some load to the master since the binary log have to be read and data copied to each slave
 
 #### Master-master replication
 
