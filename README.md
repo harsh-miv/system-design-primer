@@ -800,6 +800,19 @@ Related to this discussion are [microservices](https://en.wikipedia.org/wiki/Mic
 
 Pinterest, for example, could have the following microservices: user profile, follower, feed, search, photo upload, etc.
 
+Monolith Systems (used in stackover flow)
+
+Pros: Good for small teams, Lesser Moving Parts, Less Duplication, Faster as No RPC(remote procedure call): direct function calls
+
+Cons: Difficult for new member to understand the code base, more complex deployment as the whole system need to redeploy each time, single point of failure
+
+Microservices
+
+Pros: Easier to scale according to need, new member can work on smaller problemns and begin contributing to the project much faster , easier parallel development as services work more independtly in comparison
+
+Cons: Difficult to design (Too many small services, if a service only talk to one service then both should work as a single service hence good architect are required)
+
+
 ### Service Discovery
 
 Systems such as [Consul](https://www.consul.io/docs/index.html), [Etcd](https://coreos.com/etcd/docs/latest), and [Zookeeper](http://www.slideshare.net/sauravhaloi/introduction-to-apache-zookeeper) can help services find each other by keeping track of registered names, addresses, and ports.  [Health checks](https://www.consul.io/intro/getting-started/checks.html) help verify service integrity and are often done using an [HTTP](#hypertext-transfer-protocol-http) endpoint.  Both Consul and Etcd have a built in [key-value store](#key-value-store) that can be useful for storing config values and other shared data.
