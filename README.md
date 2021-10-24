@@ -1395,6 +1395,16 @@ If queues start to grow significantly, the queue size can become larger than mem
 * [Little's law](https://en.wikipedia.org/wiki/Little%27s_law)
 * [What is the difference between a message queue and a task queue?](https://www.quora.com/What-is-the-difference-between-a-message-queue-and-a-task-queue-Why-would-a-task-queue-require-a-message-broker-like-RabbitMQ-Redis-Celery-or-IronMQ-to-function)
 
+## Pub Sub Model 
+
+Videos: 
+
+https://www.youtube.com/watch?v=FMhbR_kQeHw
+
+https://www.youtube.com/watch?v=EgJ7xts82Mg
+
+https://www.youtube.com/watch?v=-vd_Ay0pvFY
+
 ## Communication
 
 <p align="center">
